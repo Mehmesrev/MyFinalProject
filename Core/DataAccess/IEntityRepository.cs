@@ -8,6 +8,10 @@ using Core.Entities;
 
 namespace Core.DataAccess
 {
+    //generic constraint
+    //class: referans tip
+    //IEntity: IEntity olabilir veya IEntity implemente eden bir object olabilir.
+    //new(): sadece IEntity implemente eden bir object olabilir.
     public interface IEntityRepository<T> where T : class, IEntity, new()
     {
         List<T> GetAll(Expression<Func<T, bool>> fiter = null);
