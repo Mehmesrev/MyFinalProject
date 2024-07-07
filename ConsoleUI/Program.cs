@@ -8,7 +8,7 @@ namespace CosoleUI
     {
         static void Main(string[] args)
         {
-            ProducTest();
+            //ProducTest();
             //CategoryTest();
 
         }
@@ -34,7 +34,6 @@ namespace CosoleUI
                     Console.WriteLine(product.ProductName + " " + product.CategoryName);
                 }
             }
-
             else
             {
                 Console.WriteLine(result.Message);
